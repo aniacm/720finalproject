@@ -5,7 +5,10 @@ Create an intellectual bottle recycle bin for the recycling department near your
 We use the acoustic sensing technology to collect the echoes when a bottle is drops into a box, and apply machine learning method to recognize the sound made from which material.
 
 ## Photon Connection
-
+[Adafruit 1713] :
+A0 - Output
+GND - GND
+VCC - 3V3
 
 ## Code
 1. microphone.ino
