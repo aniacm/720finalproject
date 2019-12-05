@@ -20,7 +20,7 @@ Photon code for recording audio.
 
 2. audioserver.js
 
-Before using, install the npm package "wav" and "speaker" by using:
+Before using, install the npm package "wav" and "speaker":
 ```
 npm install wav
 npm install speaker
