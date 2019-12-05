@@ -6,8 +6,11 @@ We use the acoustic sensing technology to collect the echoes when a bottle is dr
 
 ## Photon Connection
 [Adafruit 1713] :
+
 A0 - Output
+
 GND - GND
+
 VCC - 3V3
 
 ## Code
