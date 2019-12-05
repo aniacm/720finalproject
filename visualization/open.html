@@ -31,7 +31,8 @@
       $("#bin").on('click', function(event) {
 
           $.ajax({
-            url: 'https://api.particle.io/v1/devices/300021000747373336323230/open?access_token=bf182da74fe27427be53c389625b6f6bb6ac309a',
+            // Use your own device id and access_token
+            url: 'https://api.particle.io/v1/devices/[Your_Device_ID]/open?access_token=[Your_Access_Token]',
             type: 'POST',
             dataType: 'json',
             data: {arg: '1'},
