@@ -26,7 +26,7 @@ npm install wav
 npm install speaker
 ```
 
-Then to build a local server for receiving audio and play it after transition:
+Then build a local server to receive audio and play it after transition:
 ```
 node audioserver.js
 ```
