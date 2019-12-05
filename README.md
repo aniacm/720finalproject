@@ -23,9 +23,11 @@ Photon code for recording audio.
 2. audioserver.js
 
 Before using, install the npm package "wav" and "speaker".
+
 Type "node audioserver.js" in terminal to build a local server for receiving audio and play it after transition.
 
 3. visualization folder
 
 open.html: The web page to start the recording process on photon.
+
 predict.html: The web page to analyze the audio and visualize the prediction.
