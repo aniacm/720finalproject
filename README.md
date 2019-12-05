@@ -5,8 +5,6 @@ Create an intellectual bottle recycle bin for the recycling department near your
 We use the acoustic sensing technology to collect the echoes when a bottle is drops into a box, and apply machine learning method to recognize the sound made from which material.
 
 ## Photon Connection
-![Photon Image](photon.jpeg)
-
 [Adafruit 1713] :
 
 A0 - Output
@@ -22,12 +20,22 @@ Photon code for recording audio.
 
 2. audioserver.js
 
-Before using, install the npm package "wav" and "speaker".
+Before using, install the npm package "wav" and "speaker" by using:
+```
+npm install wav
+npm install speaker
+```
 
-Type "node audioserver.js" in terminal to build a local server for receiving audio and play it after transition.
+Then to build a local server for receiving audio and play it after transition:
+```
+node audioserver.js
+```
 
 3. visualization folder
 
 open.html: The web page to start the recording process on photon.
 
 predict.html: The web page to analyze the audio and visualize the prediction.
+
+## Resource
+Photon Audio Example Code: https://github.com/rickkas7/photonAudio
