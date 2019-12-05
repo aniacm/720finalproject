@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Open</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <style>
+    html,body{
+      height: 100%;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #bin{
+      cursor: pointer;
+    }
+
+    #bin:hover{
+      opacity: 0.8;
+    }
+
+  </style>
+</head>
+<body>
+    <img id="bin" src="./svg/001-trash.svg" alt="closed bin">
+    <script>
+    $(document).ready(function() {
+      $("#bin").on('click', function(event) {
+
+          $.ajax({
+            url: 'https://api.particle.io/v1/devices/300021000747373336323230/open?access_token=bf182da74fe27427be53c389625b6f6bb6ac309a',
+            type: 'POST',
+            dataType: 'json',
+            data: {arg: '1'},
+          })
+          .done(function() {
+            console.log("success");
+            $('#bin').attr("src","./svg/002-trash-1.svg");
+            setTimeout(function(){
+              $('#bin').attr("src","./svg/001-trash.svg");
+            }, 5000);
+          })
+          .fail(function() {
+            console.log("error");
+          })
+          .always(function() {
+            console.log("complete");
+          });
+          
+      });
+    });
+  </script>
+</body>
+</html>
